@@ -1,0 +1,13 @@
+﻿@model HomeViewModel
+
+<h1> Лучшие пивандеполы</h1>
+<div class=" row mt-5 mb-2">
+    @{
+        foreach (Pivo pivo in Model.favpivos)
+        {
+            @Html.Partial("AllPivos", pivo)
+        }
+
+    }
+</div>
+

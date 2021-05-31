@@ -1,0 +1,15 @@
+﻿
+
+
+
+    <h1> Все пивандеполы</h1>
+    <h3>@Model.currCategory</h3>
+    <div  class =" row mt-5 mb-2">
+        @{
+            foreach (Pivo pivo in Model.allPivos)
+            {
+               @Html.Partial("AllPivos", pivo)
+                }
+             
+            }
+    </div>
